@@ -1,0 +1,7 @@
+crewai==0.30.11
+langchain-google-genai==1.0.4
+load_dotenv
+
+flask==3.0.3
+flask-cors==3.0.10
+

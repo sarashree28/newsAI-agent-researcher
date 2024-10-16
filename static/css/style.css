@@ -1,0 +1,162 @@
+/* Reset for consistent styles across browsers */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body styling */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background-color: #e0f7fa;
+    /* Light teal background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    flex-direction: column;
+}
+
+/* Container styling */
+.container {
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    margin: 20px auto;
+}
+
+/* Input and button styling */
+input,
+button {
+    padding: 12px;
+    margin: 10px 0;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    font-size: 16px;
+}
+
+/* Button specific styling */
+button {
+    background-color: #007bff;
+    /* Blue background */
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    width: 60%;
+    /* Reduced button length */
+    padding: 10px;
+    /* Adjusted padding */
+}
+
+button:hover {
+    background-color: #0056b3;
+    /* Darker blue on hover */
+    transform: scale(1.02);
+}
+
+/* Styling for results page content */
+.result-page {
+    background-color: #ffffff;
+    /* White background for results */
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    /* Ensure the container doesn’t stretch too much */
+    width: 90%;
+    margin-top: 30px;
+    text-align: left;
+    overflow-wrap: break-word;
+    margin-left: auto;
+    margin-right: auto;
+    /* Center the result page content */
+}
+
+/* Result page header */
+.result-page h1 {
+    color: #007bff;
+    /* Blue accent */
+    font-size: 26px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    text-align: center;
+    /* Center the heading */
+}
+
+/* Paragraphs and preformatted text */
+.result-page pre {
+    background-color: #f8f9fa;
+    /* Light gray background */
+    border: 1px solid #ddd;
+    /* Soft border */
+    border-radius: 8px;
+    padding: 20px;
+    font-family: 'Courier New', monospace;
+    /* Monospaced font for code-like results */
+    font-size: 16px;
+    color: #444;
+    /* Darker gray text */
+    overflow-x: auto;
+    white-space: pre-wrap;
+    /* Allow line wrapping */
+    margin-bottom: 20px;
+    text-align: left;
+    /* Ensure preformatted text aligns to the left */
+}
+
+/* Links and navigation */
+a {
+    display: inline-block;
+    background-color: #007bff;
+    /* Blue background */
+    color: white;
+    padding: 12px 24px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+a:hover {
+    background-color: #0056b3;
+    /* Darker blue on hover */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .container,
+    .result-page {
+        padding: 20px;
+        width: 100%;
+    }
+
+    input,
+    button {
+        font-size: 14px;
+    }
+
+    button {
+        width: 70%;
+        /* Slightly increase button length on smaller screens */
+    }
+
+    .result-page pre {
+        font-size: 14px;
+        /* Adjust font size for better readability */
+    }
+}
